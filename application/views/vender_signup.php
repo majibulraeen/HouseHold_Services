@@ -2,15 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <script type="text/javascript">
-        var BASE_URL="<?php echo base_url() ?>";
-
-    </script>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login</title>
+  <title>vender signup</title>
   <link href=" <?php echo base_url()?>tools/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo base_url()?>tools/simple-line-icons/css/simple-line-icons.css">
   <link href="<?php echo base_url()?>tools/css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
@@ -54,7 +48,7 @@
                               <li><a href="<?php echo base_url()?>home/portfolio">Portfolio</a></li>
                               <li><a href="<?php echo base_url()?>home/pricing">Pricing</a></li>
                               <li><a href="<?php echo base_url()?>home/contact">Contact</a></li>
-                              <li><a href="<?php echo base_url().'home/login' ?>"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a></li>
+                              <li><a href="<?php echo base_url()?>home/login"><i class="fa fa-user fa-2x"></i></a></li>
                           </ul>
                       </div>
                   </div>
@@ -65,32 +59,51 @@
     </div>
     <div class="container">
     <div class="login_box">
-      <form action="<?php echo base_url().'home/login' ?>" class="login_user">
+      <form action="<?php echo base_url().'home/vender_signup' ?>" class="database_operations">
       <div class="row">
         <div class="col-sm-12">
           <div class="form-group">
-            <label>Enter Username</label>
-            <input type="text" name="email" class="form-control" placeholder="Username@example.com">
+            <label>Enter Name</label>
+            <input type="text" required="required" name="name" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label>Enter E-Mail(Username)</label>
+            <input type="email" required="required" name="email" class="form-control" placeholder="Username@example.com">
+          </div>
+          <div class="form-group">
+            <label>Enter Mobile NO</label>
+            <input type="text" required="required" name="mobile_no" class="form-control" placeholder="+977 98********">
           </div>
           <div class="form-group">
             <label>Enter Password</label>
-            <input type="password" name="Password" class="form-control" placeholder="**************">
+            <input type="password" required="required" name="password" class="form-control" placeholder="**************">
+          </div>
+          <div class="form-group col-sm-12">
+            <label for="">Profession</label>
+            <select class="form-control" required="required" name="profession" id="profession">
+                <option value="none">Select Profession</option>
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+                <option value="home_cleaning">Home Cleaning</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Your Location</label>
+            <input type="text" required="required" name="location" class="form-control">
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-info">Login</button>
-            <a href="#" class="pull-right"><span class="text-info">Forgot Password</span></a>
+            <button type="submit" class="btn btn-info">Signup</button>
           </div> 
         </div>
       </div>
     </form>
       <div class="row">
         <div class="col-sm-12">
-         <center> <a href="<?php echo base_url().'home/signup' ?>"> Create New Account Click Here. <span class="text-info"><b> Sign Up </b></span></a></center>
-        </div>
-        
+         <center> <a href="<?php echo base_url().'home/login' ?>"> Have An Account. <span class="text-info"><b> Login</b></span></a></center>
+        </div> 
       </div>
     </div>
-  </div>  
+  </div> 
   </div>
   <script src="<?php echo base_url()?>tools/js/jquery.js"></script>
   <script src="<?php echo base_url()?>tools/js/jquery.easing.1.3.js"></script>
@@ -101,8 +114,8 @@
   <script src="<?php echo base_url()?>tools/js/portfolio/setting.js"></script>
   <script src="<?php echo base_url()?>tools/js/jquery.flexslider.js"></script>
   <script src="<?php echo base_url()?>tools/js/animate.js"></script>
-  <script src="<?php echo base_url()?>tools/js/auth.js"></script>
   <script src="<?php echo base_url()?>tools/js/custom.js"></script>
+  <script src="<?php echo base_url()?>tools/js/auth.js"></script>
   <script src="<?php echo base_url()?>tools/js/owl-carousel/owl.carousel.js"></script>
   
 </body>

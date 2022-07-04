@@ -77,6 +77,35 @@ class Home extends CI_Controller
 		$this->session->unset_userdata('user_session');
 		redirect(base_url().'home');
 	}
+	public function vender_signup()
+	{
+		if ( $this->input->method()=='post') 
+		{
+			$this->form_validation->set_rules('location','Location is required','required');
+			$this->form_validation->set_rules('mobile_no','Mobile Number is required','required');
+			if ($this->form_validation->run()=='true') 
+			{
+				$resp=$this->cm->insert_data('providers',$_POST);
+				if($resp)
+					$arr=array('status'=>'true','message'=>'Account Successfully Created','reload'=>base_url().'home');
+				else
+					$arr=array('status'=>'false','message'=>' Failed Try Again');
+				echo json_encode($arr);
+				// code...
+			}
+			else
+			{
+				print_r(validation_errors());
+			}
+			// code...
+		}
+		else
+		{
+			$this->load->view('vender_signup');
+
+		}
+		
+	}
 
 }
 ?>

@@ -22,8 +22,46 @@
         </div>
 		
 	<!-- end slider -->
- 
 	</section>
+	<section class="jumbobox">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+			<h1>Home Services</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<form>
+					<div class="form-group col-sm-6">
+		            <label for="">Location</label>
+		            <select class="form-control" name="profession" id="profession">
+		                <option value="none">Select Location</option>
+		                <option value="electrician">Kathmandu</option>
+		                <option value="plumber">Lalitput</option>
+		                <option value="mobile"> Bhaktapur</option>
+		            </select>
+		        </div>
+		   
+		        <div class="form-group col-sm-6">
+		            <label for="">Who's Required</label>
+		            <select class="form-control" name="profession" id="profession">
+		                <option value="none">Select Profession</option>
+		                <option value="electrician">Electrician</option>
+		                <option value="plumber">Plumber</option>
+		                <option value="mobile">Mobile Repairer</option>
+		            </select>
+		    		</div>
+		    		<div class="form-group col-sm-12">
+            <button id="search" class="form-control btn btn-success" type="button">Search</button>
+        </div>
+		    </form>
+   </div>
+ 	</div>
+ </section>
 	<section class="jumbobox">
 	<div class="container">
 		<div class="row">
@@ -90,92 +128,7 @@
 	
 	</div>
 	</section> 
-	 <section class="clients">
-	 <div class="container">
-	 	<div class="clients-slider">
-				<h3 class="header-title">Our Clients</h3>
-				<div class="clients-control pull-right">
-					<a class="prev btn btn-gray btn-xs"><i class="fa fa-angle-left fa-2x"></i></a>
-					<a class="next btn btn-gray btn-xs"><i class="fa fa-angle-right fa-2x"></i></a>
-				</div>
-				<span class="line"></span>
-				<div id="clients-slider" class="owl-carousel">
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/amazon-grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/amazon.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/cisco_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/cisco.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/cityairline-grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/cityairline.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/dell-grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/dell.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/ebay-grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/ebay.png" class="colored">
-						</a>
-					</div> 
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/google-grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/google.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/hp_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/hp.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/igneus_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/igneus.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/natural_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/natural.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/shell_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/shell.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/vadafone_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/vadafone.png" class="colored">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/walmart_grey.png">
-						<img alt="Our Client" src="<?php echo base_url()?>tools/img/OurClients/walmart.png" class="colored">
-						</a>
-					</div>
-				</div>
-				<div class="fullwidth margin-bottom-20">
-				</div>
-			</div>
-		 </div>
-	 </section>
+	<br>
+	<br>
+	 
 	
